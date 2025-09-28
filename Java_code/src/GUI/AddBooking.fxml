@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<FlowPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="323.0" prefWidth="600.0" rowValignment="TOP" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AddBookingController">
+    <VBox alignment="CENTER" prefHeight="47.0" prefWidth="598.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add Booking">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Text>
+    </VBox>
+    <HBox alignment="BOTTOM_CENTER" prefHeight="260.0" prefWidth="600.0">
+        <VBox prefHeight="357.0" prefWidth="288.0">
+            <HBox.margin>
+                <Insets left="20.0" right="20.0" />
+            </HBox.margin>
+            <HBox prefHeight="48.0" prefWidth="288.0">
+                <Label text="Customer" />
+            <ComboBox fx:id="customerComboBox" prefWidth="150.0"/>
+            </HBox>
+            <HBox prefHeight="52.0" prefWidth="288.0">
+                <Label text="Pet " />
+            <ComboBox fx:id="petComboBox" prefWidth="150.0" />
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="288.0">
+                <Label text="Price " />
+                <TextField fx:id="priceTextField" />
+            </HBox>
+            <DatePicker fx:id="startDatePicker" promptText="Enter Start Date " />
+            <DatePicker fx:id="endDatePicker" promptText="Enter End Date " />
+        </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+              <Button fx:id="saveAddBookingButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleSaveAddBooking" text="Save">
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+              </Button>
+              <Button fx:id="backToBookingButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleBackToBooking" text="Back">
+               <opaqueInsets>
+                  <Insets top="50.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+              </Button>
+         </children>
+      </VBox>
+    </HBox>
+</FlowPane>

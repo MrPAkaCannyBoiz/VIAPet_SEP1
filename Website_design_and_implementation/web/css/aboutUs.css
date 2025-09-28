@@ -1,0 +1,50 @@
+body {
+  min-height: 100vh;
+  background-color: #9b7ebd;
+  color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+}
+
+.violet {
+  background-color: #6b2ea4;
+}
+
+.carousel-item img {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+}
+
+footer {
+  padding-top: 2vh;
+  height: auto;
+  background-color: #6b2ea4;
+  color: #eeeeee;
+  text-align: center;
+  margin-top: auto;
+}
+
+.socialt:before {
+  content: url(../assets/twitter.svg);
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  filter: invert(99%) sepia(1%) saturate(6185%) hue-rotate(284deg)
+    brightness(123%) contrast(87%);
+}
+
+.socialf:before {
+  content: url(../assets/facebook.svg);
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  filter: invert(99%) sepia(1%) saturate(6185%) hue-rotate(284deg)
+    brightness(123%) contrast(87%);
+}
+
+a {
+  color: #eeeeee;
+  text-decoration: none;
+}
